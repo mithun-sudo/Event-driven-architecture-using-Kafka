@@ -1,0 +1,2 @@
+docker run -p 9092:9092 apache/kafka:3.7.0
+docker run -p 127.0.0.1:6543:5432 -e POSTGRES_PASSWORD=password postgres:13
