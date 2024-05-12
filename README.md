@@ -22,12 +22,19 @@ The architecture is designed as follows:
 
 This repository contains the following components:
 
-- **SQL Scripts**: Contains scripts related to database setup and schema.
+- **SQL Scripts**: Contains SQL queries for generating various statistical reports including:
+  - Batsman Scorecard
+  - Bowler Card
+  - Manhattan
+  - Run Rate by Over
+  - Fall of Wickets
+  - Match Overview Card
 - **Kafka Producer**: Implementation of the Kafka producer that fetches ball event data from the IPL API and streams it to Kafka.
 - **Kafka Consumer Scripts**:
   - **Analytics Consumer**: Consumes data from Kafka, processes it, and writes it to the `ipl_stats` table.
   - **Notification Consumer**: Consumes data from Kafka for notification purposes.
 - **Docker Compose File**: Docker-compose.yaml file for easy deployment and management of Kafka, PostgreSQL, and other services.
+- **Images**: Contains visualizations and dashboards created using the SQL queries.
 
 ## Usage
 
